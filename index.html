@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Fractal Glass Parallax Effect</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <div class="app">
+      <div class="logo">LOGO</div>
+      <nav class="nav-links">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+      </nav>
+    </div>
+
+    <section class="hero">
+      <!-- Hidden image used as the texture source for shaders -->
+      <img
+        id="glassTexture"
+        src="/hero.jpg"
+        alt="Glass Texture"
+      />
+
+      <div class="hero-content">
+        <h1>Fractal Glass Parallax</h1>
+        <p>
+          A dynamic glass distortion effect with parallax powered by shaders
+        </p>
+      </div>
+    </section>
+
+    <div class="bottom_div"></div>
+
+    <!-- Include Three.js library -->
+    <script src="https://cdn.jsdelivr.net/npm/three@0.152.2/build/three.min.js"></script>
+
+    <!-- Include the main script -->
+    <script src="script.js"></script>
+  </body>
+</html>
